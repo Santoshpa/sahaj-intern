@@ -8,10 +8,14 @@ class DesignController{
   
     function loginDesign() {
 
-        $data = include('./view/header');
-        $data .= include('./view/auth/login');
+        $data .= include('./view/auth/login.php');
     
         return $data;
+    }
+    function loginForm(){
+        
+        $design = include('./view/auth/loginform.php');
+        return $design;
     }
 
     function navDesign(){
@@ -32,5 +36,7 @@ class DesignController{
         $design = include('./view/auth/registerform.php');
         return $design; 
     }
+       
 
+ 
 }
